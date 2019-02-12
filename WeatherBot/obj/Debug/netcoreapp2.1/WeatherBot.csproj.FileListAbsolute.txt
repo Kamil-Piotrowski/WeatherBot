@@ -1,0 +1,12 @@
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.csprojAssemblyReference.cache
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.csproj.CoreCompileInputs.cache
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.AssemblyInfoInputs.cache
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.AssemblyInfo.cs
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.bot
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.deps.json
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.runtimeconfig.json
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.runtimeconfig.dev.json
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.dll
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.pdb
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.dll
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.pdb
