@@ -22,4 +22,4 @@ Makes use of:<br/>
 + [AccuWeather Api](https://developer.accuweather.com/)
 
 <br/><br/><br/>
-![sss](/WeatherBot/bot.png)
+![sss](WeatherBot/wwwroot/bot.PNG)
