@@ -1,0 +1,79 @@
+{
+  "warszawa": "warszawa",
+  "warszawy": "warszawa",
+  "warszawie": "warszawa",
+  "warszawe": "warszawa",
+
+  "gdansk": "gdansk",
+  "gdanska": "gdansk",
+  "gdansku": "gdansk",
+  "gdanskiem": "gdansk",
+
+  "gdynia": "gdynia",
+  "gdyni": "gdynia",
+  "gdynie": "gdynia",
+
+  "szczecin": "szczecin",
+  "szczecina": "szczecin",
+  "szczecinowi": "szczecin",
+  "szczecinem": "szczecin",
+  "szczecinie": "szczecin",
+
+  "poznan": "poznan",
+  "poznania": "poznan",
+  "poznaniowi": "poznan",
+  "poznaniem": "poznan",
+  "poznaniu": "poznan",
+
+  "wroclaw": "wroclaw",
+  "wroclawia": "wroclaw",
+  "wroclawiowi": "wroclaw",
+  "wroclawiem": "wroclaw",
+  "wroclawiu": "wroclaw",
+
+  "lodz": "lodz",
+  "lodzi": "lodz",
+  "lodzia": "lodz",
+
+  "katowice": "katowice",
+  "katowic": "katowice",
+  "katowicom": "katowice",
+  "katowicami": "katowice",
+  "katowicach": "katowice",
+
+  "krakow": "krakow",
+  "krakowa": "krakow",
+  "krakowowi": "krakow",
+  "krakowem": "krakow",
+  "krakowie": "krakow",
+
+  "kielce": "kielce",
+  "kielc": "kielce",
+  "kielcom": "kielce",
+  "kielcami": "kielce",
+  "kielcach": "kielce",
+
+  "olsztyn": "olsztyn",
+  "olsztyna": "olsztyn",
+  "olsztynowi": "olsztyn",
+  "olsztynem": "olsztyn",
+  "olsztynie": "olsztyn",
+
+  "bialystok": "bialystok",
+  "bialegostoku": "bialystok",
+  "bialemustokowi": "bialystok",
+  "bialymstokiem": "bialystok",
+  "bialymstoku": "bialystok",
+
+  "lublin": "lublin",
+  "lublina": "lublin",
+  "lublinowi": "lublin",
+  "lublinem": "lublin",
+  "lublinie": "lublin",
+
+  "rzeszow": "rzeszow",
+  "rzeszowa": "rzeszow",
+  "rzeszowowi": "rzeszow",
+  "rzeszowem": "rzeszow",
+  "rzeszowie": "rzeszow"
+}

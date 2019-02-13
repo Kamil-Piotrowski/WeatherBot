@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherBot", "WeatherBot\WeatherBot.csproj", "{6124DB4D-AB32-43E2-90DF-86F8B1B28B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherBot", "WeatherBot\WeatherBot.csproj", "{6124DB4D-AB32-43E2-90DF-86F8B1B28B43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherBotTests", "WeatherBotTests\WeatherBotTests.csproj", "{1AA01234-26C0-41A4-85E8-47418A28324E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6124DB4D-AB32-43E2-90DF-86F8B1B28B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6124DB4D-AB32-43E2-90DF-86F8B1B28B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6124DB4D-AB32-43E2-90DF-86F8B1B28B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA01234-26C0-41A4-85E8-47418A28324E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA01234-26C0-41A4-85E8-47418A28324E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA01234-26C0-41A4-85E8-47418A28324E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA01234-26C0-41A4-85E8-47418A28324E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

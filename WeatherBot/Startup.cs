@@ -132,7 +132,7 @@ namespace WeatherBot
                 // State accessors enable other components to read and write individual properties of state.
                 var accessors = new WeatherBotAccessors(conversationState)
                {
-                   CounterState = conversationState.CreateProperty<CounterState>(WeatherBotAccessors.CounterStateName),
+                   
                };
 
                return accessors;
