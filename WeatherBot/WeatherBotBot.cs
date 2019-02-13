@@ -115,8 +115,16 @@ namespace WeatherBot
         private string getWeatherData(string searchText)
         {
             string locationKey = _weatherDataSource.GetLocationKey(searchText);
-            WeatherData res =  _weatherDataSource.GetWeatherData(locationKey);
-            return res.LocalTime + " - " + res.Description + " - " + res.TemperatureCelsius;
+            try
+            {
+                WeatherData res = _weatherDataSource.GetWeatherData(locationKey);
+                return res.LocalTime + " - " + res.Description + " - " + res.TemperatureCelsius;
+            }
+            catch
+            {
+                return "gdzie?";
+            }
+            
         }
     }
 }
