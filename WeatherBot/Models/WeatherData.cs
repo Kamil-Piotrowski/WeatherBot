@@ -7,11 +7,11 @@ namespace WeatherBot.Models
 {
     public class WeatherData
     {
-        public WeatherData(DateTime localDateTime, string description, int temperatureCelsius)
+        public WeatherData(string LocalObservationDateTime, string WeatherText, string Temperature)
         {
-            _localDateTime = localDateTime;
-            Description = description;
-            TemperatureCelsius = temperatureCelsius;
+            _localDateTime = DateTime.Parse(LocalObservationDateTime);
+            Description = WeatherText;
+            TemperatureCelsius = double.Parse(Temperature);
         }
 
         private readonly DateTime _localDateTime;
@@ -23,6 +23,6 @@ namespace WeatherBot.Models
             }
         }
         public string Description { get; }
-        public int TemperatureCelsius { get; }
+        public double TemperatureCelsius { get; }
     }
 }

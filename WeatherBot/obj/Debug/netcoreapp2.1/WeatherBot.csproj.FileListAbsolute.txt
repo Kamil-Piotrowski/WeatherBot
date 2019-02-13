@@ -22,3 +22,4 @@ C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcorea
 C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.AssemblyInfo.cs
 C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.dll
 C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.pdb
+C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\locations.json

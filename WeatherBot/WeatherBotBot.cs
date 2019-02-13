@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -114,16 +115,19 @@ namespace WeatherBot
         }
         private string getWeatherData(string searchText)
         {
-            
+            string responseCode=null;
             try
             {
-                string locationKey = _weatherDataSource.GetLocationKey(searchText);
-                WeatherData res = _weatherDataSource.GetWeatherData(locationKey);
-                return res.LocalTime + " - " + res.Description + " - " + res.TemperatureCelsius;
+                
+                string locationKey = _weatherDataSource.GetLocationKey(searchText, out responseCode);
+                WeatherData res = _weatherDataSource.GetWeatherData(locationKey, out responseCode);
+                return "Time: "+res.LocalTime + ", Description: " + res.Description + ", temperature: " + res.TemperatureCelsius +" C";
             }
             catch
             {
-                return "gdzie?";
+                if (responseCode != null)
+                    return "oops, " + responseCode;
+                return "something went wrong";
             }
             
         }

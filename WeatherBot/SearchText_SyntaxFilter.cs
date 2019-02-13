@@ -15,15 +15,9 @@ namespace WeatherBot
             if (locations == null)
                 initLocationsFromFile();
 
-            try
-            {
-                return (string)locations[searchText];
-            }
-            catch
-            {
-                return searchText;
-            }
-           
+            
+            return (string)locations[searchText] ?? searchText;
+
         }
         private static void initLocationsFromFile()
         {

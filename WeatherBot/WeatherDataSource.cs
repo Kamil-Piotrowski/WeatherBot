@@ -11,40 +11,65 @@ namespace WeatherBot
     public class WeatherDataSource
     {
         public readonly string _apiKey;
-        private readonly HttpClient httpClient;
+        private HttpClient httpClient;
 
         public WeatherDataSource(string apiKey)
         {
             _apiKey = apiKey;
-            httpClient = new HttpClient();
-            
+
         }
-        public string GetLocationKey(string SearchText)
+        public string GetLocationKey(string SearchText, out string responseCode)
         {
+            httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("http://dataservice.accuweather.com/locations/v1/search");
             string parameters = "?q="+SearchText+"&apikey="+_apiKey;
+            string locationKey = null;
             HttpResponseMessage response = httpClient.GetAsync(parameters).Result;
+            responseCode = response.StatusCode.ToString();
             if (response.IsSuccessStatusCode)
             {
-                JArray ar = JArray.Parse(response.Content.ToString());
+                
+                JArray ar = JArray.Parse(response.Content.ReadAsStringAsync().Result);
                 if(ar.Count >0)
-                    return ar.First.Value<string>("Key").ToString();
+                    locationKey = ar.First.Value<string>("Key").ToString();
             }
-            throw new KeyNotFoundException();
+            httpClient.Dispose();
+            httpClient = null;
+            return locationKey;
             
         }
-        public WeatherData GetWeatherData(string locationKey)
+        public WeatherData GetWeatherData(string locationKey, out string responseCode)
         {
-            httpClient.BaseAddress = new Uri("http://dataservice.accuweather.com/currentconditions/v1/"+locationKey);
-            string parameters = "?apikey=" + _apiKey;
+            if(locationKey == null)
+                throw new KeyNotFoundException();
+
+            httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(@"http://dataservice.accuweather.com");
+            WeatherData data = null;
+            string parameters = "/currentconditions/v1/" +locationKey + "/"+"?apikey=" + _apiKey;
             HttpResponseMessage response = httpClient.GetAsync(parameters).Result;
+            responseCode = response.StatusCode.ToString();
             if (response.IsSuccessStatusCode)
             {
-                JArray ar = JArray.Parse(response.Content.ToString());
+                JArray ar = JArray.Parse(response.Content.ReadAsStringAsync().Result);
                 if (ar.Count > 0)
-                    return ar.First.ToObject<WeatherData>();
+                {
+                    //data = ar.First.ToObject<WeatherData>();
+                    string datetime = ar.First["LocalObservationDateTime"].Value<string>();
+                    string text = ar.First["WeatherText"].Value<string>();
+                    JObject temp = ar.First["Temperature"].Value<JObject>();
+                    JObject metric = (JObject)temp["Metric"];
+                    string tempC = (string)metric["Value"];
+                    data = new WeatherData(datetime, text, tempC);
+                }
+                    
+                else
+                    throw new KeyNotFoundException();
             }
-            throw new KeyNotFoundException();
+
+            httpClient.Dispose();
+            httpClient = null;
+            return data;
         }
     }
 }
