@@ -20,3 +20,6 @@ Introduces itself and tells what's the weather in specified place.<br/>
 Makes use of:<br/>
 + [MS Bot Framework](https://dev.botframework.com/)
 + [AccuWeather Api](https://developer.accuweather.com/)
+
+<br/><br/><br/>
+![](/WeatherBot/WeatherBot/bot.png)
