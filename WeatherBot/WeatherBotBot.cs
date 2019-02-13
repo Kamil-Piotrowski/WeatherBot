@@ -1,11 +1,13 @@
 ﻿// Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
 
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Schema;
 using Microsoft.Extensions.Logging;
+using WeatherBot.Models;
 
 namespace WeatherBot
 {
@@ -76,8 +78,12 @@ namespace WeatherBot
                 // Save the new turn count into the conversation state.
                 await _accessors.ConversationState.SaveChangesAsync(turnContext);
 
-                // Echo back to the user whatever they typed.
-                var responseMessage = $"Turn {state.TurnCount}: You sent '{turnContext.Activity.Text}'\n";
+
+                string searchText = getSearchText(turnContext.Activity.Text);
+                string responseMessage = getWeatherData(searchText);
+
+
+
                 await turnContext.SendActivityAsync(responseMessage);
             }
             else
@@ -92,6 +98,25 @@ namespace WeatherBot
                     }
                 }
             }
+        }
+
+        private string getSearchText(string requesterStatement)
+        {
+            requesterStatement = requesterStatement
+                .Replace("?", "")
+                .Replace(".","")
+                .Replace(",","")
+                .Replace("/", "")
+                .Replace("\\", "");
+
+            var words = requesterStatement.Split(' ');
+            return SearchText_SyntaxFilter.GetLocationName(words[words.Length - 1]);
+        }
+        private string getWeatherData(string searchText)
+        {
+            string locationKey = _weatherDataSource.GetLocationKey(searchText);
+            WeatherData res =  _weatherDataSource.GetWeatherData(locationKey);
+            return res.LocalTime + " - " + res.Description + " - " + res.TemperatureCelsius;
         }
     }
 }

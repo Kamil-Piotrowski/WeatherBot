@@ -10,3 +10,15 @@ C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\Weather
 C:\Users\koko\source\repos\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.pdb
 C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.dll
 C:\Users\koko\source\repos\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.pdb
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.bot
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.deps.json
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.runtimeconfig.json
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.runtimeconfig.dev.json
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.dll
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\bin\Debug\netcoreapp2.1\WeatherBot.pdb
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.csprojAssemblyReference.cache
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.csproj.CoreCompileInputs.cache
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.AssemblyInfoInputs.cache
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.AssemblyInfo.cs
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.dll
+C:\Users\Grp-Kpiotrow\Desktop\kody\inne\WeatherBot\WeatherBot\obj\Debug\netcoreapp2.1\WeatherBot.pdb
